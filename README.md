@@ -2,7 +2,7 @@
 
 An implmentation of pentago
 
-![alt text](https://github.com/anthonymolinari/react-pentago/blob/main/pentago-screenshot.png?raw=true)
+![alt text](https://github.com/anthonymolinari/react-pentago/blob/main/docs/images/pentago_screenshot.png?raw=true)
 
 ## Run with docker
 ```
