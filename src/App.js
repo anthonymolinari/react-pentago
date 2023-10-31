@@ -38,7 +38,6 @@ function App() {
     const [ nextColor, setNextColor ] = useState('blue');
     const [ winnerColor, setWinnerColor ] = useState(undefined);
     const [ disableRotate, setDisableRotate ] = useState(true);
-    const [ lastCell, setLastCell ] = useState({});
 
     const newGame = () => {
         setGameData(initGamedata())
@@ -70,7 +69,7 @@ function App() {
 
     const moveHandler = (cell) => {
         if ( gameData[cell.row][cell.col].selected || disable || hasWinner) {
-            return;
+            return [...gameData];
         }
         const newGameData = [...gameData];
         newGameData[cell.row][cell.col] = {
